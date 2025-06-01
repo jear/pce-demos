@@ -1,0 +1,68 @@
+{
+ "group": {
+  "id": "1",
+  "name": "HPE_All"
+ },
+ "cloud": {
+  "id": 14,
+  "name": "MorphCloud"
+ },
+ "config": {
+  "createUser": false,
+  "isEC2": false,
+  "isVpcSelectable": true,
+  "customOptions": {
+   "dbfoldername": "<%= customOptions.dbfoldername %>",
+   "dbfoldernewname": "Apps/my-app-folder-scoped-access"
+  },
+  "resourcePoolId": ""
+ },
+ "type": "xaas-jear",
+ "name": "my-instance-catalog-item",
+ "environment": "2",
+ "instance": {
+  "userGroup": {
+   "id": ""
+  }
+ },
+ "defaultExpandAdvanced": true,
+ "hostName": "my-instance-catalog-item",
+ "layout": {
+  "id": 1912,
+  "code": "7e486491-31c4-467e-80b2-7908570ca784"
+ },
+ "plan": {
+  "id": 1207,
+  "code": "workflow.default"
+ },
+ "volumes": [
+  {
+   "rootVolume": true,
+   "name": "root",
+   "maxStorage": 0,
+   "size": 0,
+   "volumeCustomizable": false,
+   "readonlyName": false
+  }
+ ],
+ "version": "latest",
+ "backup": {
+  "backupJob": {
+   "retentionCount": null,
+   "scheduleTypeId": null,
+   "syntheticFullEnabled": false,
+   "syntheticFullSchedule": null
+  },
+  "createBackup": false,
+  "jobAction": "new",
+  "veeamManagedServer": "",
+  "providerBackupType": -1
+ },
+ "loadBalancer": [],
+ "hideLock": true,
+ "workflow": {
+  "name": "XaaS - Dropbox",
+  "taskSetId": 2
+ },
+ "showScale": false
+}
